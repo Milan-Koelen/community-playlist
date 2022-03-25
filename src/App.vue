@@ -1,29 +1,41 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import Index from "./components/Index.vue";
+import "./assets/base.css";
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+  <!-- <header>
+    <img
+      alt="Vue logo"
+      class="logo"
+      src="./assets/logo.svg"
+      width="125"
+      height="125"
+    />
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
     </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+  </header> -->
+  <div
+    class="h-[100vh] w-[100vw]"
+    :style="{
+      'background-image': 'url(https://random.imagecdn.app/1920/1080)',
+    }"
+  >
+    <main>
+      <Index />
+    </main>
+  </div>
 </template>
 
 <style>
-@import './assets/base.css';
+@import "./assets/base.css";
 
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  /* max-width: 1280px; */
+  /* margin: 0 auto; */
+  /* padding: 2rem; */
 
   font-weight: normal;
 }
@@ -59,7 +71,7 @@ a,
   #app {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+    /* padding: 0 2rem; */
   }
 
   header {
