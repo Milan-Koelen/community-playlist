@@ -1,6 +1,10 @@
-import 'dotenv/config'
-import "tailwindcss/tailwind.css"
-import { createApp } from 'vue'
-import App from './App.vue'
+// import dotenv from 'dotenv';
+import "tailwindcss/tailwind.css";
+import { createApp } from "vue";
+import App from "./App.vue";
 
-createApp(App).mount('#app')
+// dotenv.config()
+
+// console.log(process.env)
+
+createApp(App).mount("#app");
