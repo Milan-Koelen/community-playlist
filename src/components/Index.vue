@@ -37,36 +37,38 @@
         <p class="flex text-slate-200 drop-shadow-lg">
           Add your favorite tracks below, sepparated by commas...
         </p>
-        <input
-          style="text-align: center"
-          type="text"
-          @keydown="keydown"
-          v-model="track"
-          placeholder="YouTube or SoundCloud link here"
-          class="h-12 mt-3 rounded-lg text-slate-600 w-full caret-transparent"
-          name="track"
-          autofocus
-        />
+        <form>
+          <input
+            style="text-align: center"
+            type="text"
+            @keydown="keydown"
+            v-model="track"
+            placeholder="YouTube or SoundCloud link here"
+            class="h-12 mt-3 rounded-lg text-slate-600 w-full caret-transparent"
+            name="track"
+            autofocus
+          />
 
-        <button
-          class="
-            flex
-            align-self-end
-            bg-orange-600
-            text-white
-            hover:bg-orange-500
-            px-5
-            text-lg text-align-center
-            font-semibold
-            rounded-lg
-            py-2
-            mt-5
-            mb-3
-          "
-          v-on:click="click"
-        >
-          Add Track
-        </button>
+          <button
+            class="
+              flex
+              align-self-end
+              bg-orange-600
+              text-white
+              hover:bg-orange-500
+              px-5
+              text-lg text-align-center
+              font-semibold
+              rounded-lg
+              py-2
+              mt-5
+              mb-3
+            "
+            @click.prevent="submitTrack()"
+          >
+            Add Track
+          </button>
+        </form>
       </div>
     </div>
   </div>
@@ -74,7 +76,18 @@
 
 <script>
 export default {
+  data: function () {
+    return {
+      url: "",
+    };
+  },
   methods: {
+    submitTrack() {
+      const trackURL = { url: this.url };
+      this.$http.post("localhost:4000", trackURL).then((res) => {
+        console.log(res.body);
+      });
+    },
     keydown(event) {
       if (event.key === "Enter") {
         console.log("SUBMIT THROUGH KEYDOWN");
