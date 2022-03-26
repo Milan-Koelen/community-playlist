@@ -1,4 +1,5 @@
-<script setup></script>
+<script setup>
+</script>
 
 <template>
   <div
@@ -15,9 +16,9 @@
         bg-[rgba(100,100,100,.30)]
         backdrop-blur-lg
         rounded-lg
-        px-4
+        px-6
         py-4
-        border-2 border-gray-700
+        border-2 border-gray-600 border-opacity-25
       "
     >
       <div>
@@ -39,9 +40,12 @@
         <input
           style="text-align: center"
           type="text"
+          @keydown="keydown"
+          v-model="track"
           placeholder="YouTube or SoundCloud link here"
-          class="h-12 mt-3 rounded-lg text-slate-600 w-full"
-          name="URL"
+          class="h-12 mt-3 rounded-lg text-slate-600 w-full caret-transparent"
+          name="track"
+          autofocus
         />
 
         <button
@@ -56,8 +60,10 @@
             font-semibold
             rounded-lg
             py-2
-            my-5
+            mt-5
+            mb-3
           "
+          v-on:click="click"
         >
           Add Track
         </button>
@@ -65,3 +71,23 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    keydown(event) {
+      if (event.key === "Enter") {
+        console.log("SUBMIT THROUGH KEYDOWN");
+      } else if (event.key === "Escape") {
+        this.track.value = "";
+        console.log("CLEARED INPUT");
+      }
+      console.log(event.key);
+    },
+    click() {
+      // console.log();
+      console.log("submit");
+    },
+  },
+};
+</script>
