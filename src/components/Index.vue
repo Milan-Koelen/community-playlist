@@ -1,5 +1,4 @@
-<script setup>
-</script>
+<script setup></script>
 
 <template>
   <div
@@ -37,12 +36,12 @@
         <p class="flex text-slate-200 drop-shadow-lg">
           Add your favorite tracks below, sepparated by commas...
         </p>
-        <form>
+        <form @submit="submitTrack">
           <input
             style="text-align: center"
             type="text"
             @keydown="keydown"
-            v-model="track"
+            v-model="trackUrl"
             placeholder="YouTube or SoundCloud link here"
             class="h-12 mt-3 rounded-lg text-slate-600 w-full caret-transparent"
             name="track"
@@ -75,27 +74,38 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
   data: function () {
     return {
-      url: "",
+      trackUrl: "",
     };
   },
   methods: {
     submitTrack() {
-      const trackURL = { url: this.url };
-      this.$http.post("localhost:4000", trackURL).then((res) => {
-        console.log(res.body);
-      });
+      // POST request using axios with error handling
+      const newTrack = { trackUrl: this.trackUrl };
+      console.log("posting track", newTrack);
+
+      axios
+        .post("http://localhost:4000/addtrack", newTrack)
+
+        .then((response) => console.log(response.data))
+        // .then((response) => (this.newTrack = response.data.id))
+        .catch((error) => {
+          this.errorMessage = error.message;
+          console.error("There was an error!", error);
+        })
+        .then(console.log("posting track done"));
     },
     keydown(event) {
       if (event.key === "Enter") {
         console.log("SUBMIT THROUGH KEYDOWN");
+        this.submitTrack();
       } else if (event.key === "Escape") {
-        this.track.value = "";
+        this.trackUrl = "";
         console.log("CLEARED INPUT");
       }
-      console.log(event.key);
     },
     click() {
       // console.log();

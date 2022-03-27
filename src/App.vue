@@ -20,7 +20,7 @@ import "./assets/base.css";
   <div
     class="h-[100vh] w-[100vw]"
     :style="{
-      'background-image': 'url(https://random.imagecdn.app/1920/1080)',
+      'background-image': 'url(https://random.imagecdn.app/1920/980)',
     }"
   >
     <main>
