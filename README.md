@@ -11,9 +11,9 @@
     <br/>
     <a href="https://github.com/Milan-koelen/community-playlist">View Demo</a>
     .
-    <a href="https://github.com/Milan-koelen/community-radio/playlist">Report Bug</a>
+    <a href="https://github.com/Milan-koelen/community-playlist">Report Bug</a>
     .
-    <a href="https://github.com/Milan-koelen/community-radio/playlist">Request Feature</a>
+    <a href="https://github.com/Milan-koelen/community-playlist">Request Feature</a>
   </p>
 </p>
 
