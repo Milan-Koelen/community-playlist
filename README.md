@@ -31,13 +31,13 @@ https://github.com/Milan-Koelen/community-playlist
   <!-- - [Usage](#usage) -->
 - [Roadmap](#roadmap)
 - [Contributing](#contributing)
-- [License](#license)
-  <!-- - [Authors](#authors) -->
-  <!-- - [Acknowledgements](#acknowledgements) -->
+  <!-- - [License](#license) -->
+    <!-- - [Authors](#authors) -->
+    <!-- - [Acknowledgements](#acknowledgements) -->
 
 ## About The Project
 
-![Screen Shot](./screenshot.png)
+![Screen Shot](./Screenshot.png)
 
 There are many great ways to create an amazing playlist. However, nothing as annoying as switching between YouTube and SoundCloud to listen to your favourite tracks.
 This application makes it possible to combine both YouTube and SoundCloud tracks in one playlist and through its backend will even save them in a folder as mp3 for later use.
@@ -55,7 +55,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to in stall the prerequisites before using the software and how to install them.
+How to install the prerequisites before using the software.
 
 - npm
 
@@ -71,7 +71,7 @@ git clone https://github.com/milan-koelen/community-radio-backend
 
 ### Installation
 
-1. Clone the repo
+1. Clone this repo
 
 ```sh
 git clone https://github.com/milan-koelen/community-playlist.git
@@ -123,9 +123,9 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## License
+<!-- ## License
 
-Distributed under the MIT License. See [LICENSE](https://github.com/Milan-koelen/community-radio/blob/main/LICENSE.md) for more information.
+Distributed under the MIT License. See [LICENSE](https://github.com/Milan-koelen/community-radio/blob/main/LICENSE.md) for more information. -->
 
 <!-- ## Authors
 
@@ -136,4 +136,4 @@ Distributed under the MIT License. See [LICENSE](https://github.com/Milan-koelen
 
 - []()
 - []()
-- []() --> -->
+- []() -->
