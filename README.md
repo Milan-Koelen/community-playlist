@@ -5,15 +5,15 @@
   <p align="center">
     An open source playlist to combine your YouTube and SoundCloud music into one playlist. All in your browser.
     <br/>
+    <!-- <br/>
+    <a href="https://github.com/Milan-koelen/community-playlist"><strong>Explore the docs »</strong></a>
+    <br/> -->
     <br/>
-    <a href="https://github.com/Milan-koelen/community-radio"><strong>Explore the docs »</strong></a>
-    <br/>
-    <br/>
-    <a href="https://github.com/Milan-koelen/community-radio">View Demo</a>
+    <a href="https://github.com/Milan-koelen/community-playlist">View Demo</a>
     .
-    <a href="https://github.com/Milan-koelen/community-radio/issues">Report Bug</a>
+    <a href="https://github.com/Milan-koelen/community-radio/playlist">Report Bug</a>
     .
-    <a href="https://github.com/Milan-koelen/community-radio/issues">Request Feature</a>
+    <a href="https://github.com/Milan-koelen/community-radio/playlist">Request Feature</a>
   </p>
 </p>
 
