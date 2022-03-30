@@ -17,7 +17,9 @@
   </p>
 </p>
 
-![Contributors](https://img.shields.io/github/contributors/Milan-koelen/community-playlist?color=dark-green) ![Forks](https://img.shields.io/github/forks/Milan-koelen/community-playlist?style=social) ![Issues](https://img.shields.io/github/issues/Milan-koelen/community-playlist) ![License](https://img.shields.io/github/license/Milan-koelen/community-playlist)
+https://github.com/Milan-Koelen/community-playlist
+
+![Contributors](https://img.shields.io/github/contributors/Milan-Koelen/community-playlist?color=dark-green) ![Forks](https://img.shields.io/github/forks/Milan-Koelen/community-playlist?style=social) ![Issues](https://img.shields.io/github/issues/Milan-Koelen/community-playlist) ![License](https://img.shields.io/github/license/Milan-Koelen/community-playlist)
 
 ## Table Of Contents
 
