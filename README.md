@@ -9,15 +9,15 @@
     <a href="https://github.com/Milan-koelen/community-playlist"><strong>Explore the docs »</strong></a>
     <br/> -->
     <br/>
-    <a href="https://github.com/Milan-koelen/community-playlist">View Demo</a>
+    <!-- <a href="https://github.com/Milan-koelen/community-playlist">View Demo</a>
     .
-    <a href="https://github.com/Milan-koelen/community-radio/playlist">Report Bug</a>
+    <a href="https://github.com/Milan-koelen/community-playlist">Report Bug</a>
     .
-    <a href="https://github.com/Milan-koelen/community-radio/playlist">Request Feature</a>
+    <a href="https://github.com/Milan-koelen/community-playlist">Request Feature</a> -->
   </p>
 </p>
 
-![Contributors](https://img.shields.io/github/contributors/Milan-koelen/community-radio?color=dark-green) ![Forks](https://img.shields.io/github/forks/Milan-koelen/community-radio?style=social) ![Issues](https://img.shields.io/github/issues/Milan-koelen/community-radio) ![License](https://img.shields.io/github/license/Milan-koelen/community-radio)
+![Contributors](https://img.shields.io/github/contributors/Milan-koelen/community-playlist?color=dark-green) ![Forks](https://img.shields.io/github/forks/Milan-koelen/community-playlist?style=social) ![Issues](https://img.shields.io/github/issues/Milan-koelen/community-playlist) ![License](https://img.shields.io/github/license/Milan-koelen/community-playlist)
 
 ## Table Of Contents
 
