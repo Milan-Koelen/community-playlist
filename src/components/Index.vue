@@ -89,7 +89,7 @@
       </div>
     </div>
   </div>
-  <audio controls src="http://localhost:4000/">
+  <audio autoplay src="http://localhost:4000/">
     Your browser does not support the
     <code>audio</code> element.
   </audio>
@@ -133,16 +133,8 @@ export default {
     },
     async playMusic() {
       console.log("play");
-      let track = "";
-      await axios
-        .get("http://localhost:4000/")
-        .then((response) => (track = new Audio(response)));
+      let track = await axios.get("http://localhost:4000/");
       console.log(track);
-      track.play();
-      // const music = new Audio(track);
-      // music.play();
-      // music.loop = false;
-      // music.playbackRate = 2;
     },
   },
 };
