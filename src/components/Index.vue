@@ -4,7 +4,7 @@
   <div
     class="
       mx-16
-      lg:ml-[-20%] lg:mr-[15%] lg:px-[25vw] lg:px-[33]
+      lg:ml-[-20%] lg:mr-[15%] lg:px-[25vw]
       xl:mr-[25%]
       py-[33vh]
       md:px-[15vw]
@@ -47,29 +47,52 @@
             name="track"
             autofocus
           />
-          <button
-            class="
-              flex
-              align-self-end
-              bg-orange-600
-              text-white
-              hover:bg-orange-500
-              px-5
-              text-lg text-align-center
-              font-semibold
-              rounded-lg
-              py-2
-              mt-5
-              mb-3
-            "
-            @click.prevent="submitTrack()"
-          >
-            Add Track
-          </button>
+          <div class="flex justify-around">
+            <button
+              class="
+                align-self-end
+                bg-orange-600
+                text-white
+                hover:bg-orange-500
+                px-5
+                text-lg text-align-center
+                font-semibold
+                rounded-lg
+                py-2
+                mt-5
+                mb-3
+              "
+              @click.prevent="submitTrack()"
+            >
+              Add Track
+            </button>
+            <button
+              class="
+                align-self-end
+                bg-orange-600
+                text-white
+                hover:bg-orange-500
+                px-5
+                text-lg text-align-center
+                font-semibold
+                rounded-lg
+                py-2
+                mt-5
+                mb-3
+              "
+              @click.prevent="playMusic()"
+            >
+              Play music
+            </button>
+          </div>
         </form>
       </div>
     </div>
   </div>
+  <audio controls src="http://localhost:4000/">
+    Your browser does not support the
+    <code>audio</code> element.
+  </audio>
 </template>
 
 <script>
@@ -98,6 +121,7 @@ export default {
       if (event.key === "Enter") {
         console.log("SUBMIT THROUGH KEYDOWN");
         this.submitTrack();
+        this.playMusic();
       } else if (event.key === "Escape") {
         this.trackUrl = "";
         console.log("CLEARED INPUT");
@@ -106,6 +130,19 @@ export default {
     click() {
       // console.log();
       console.log("submit");
+    },
+    async playMusic() {
+      console.log("play");
+      let track = "";
+      await axios
+        .get("http://localhost:4000/")
+        .then((response) => (track = new Audio(response)));
+      console.log(track);
+      track.play();
+      // const music = new Audio(track);
+      // music.play();
+      // music.loop = false;
+      // music.playbackRate = 2;
     },
   },
 };
